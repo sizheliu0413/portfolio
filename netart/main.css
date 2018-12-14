@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+h1{
+    margin: 0px;
+    padding: 15px;
+    text-align:center;
+    color:floralwhite;
+    font-size:40pt;
+    font-family: 'Pacifico', cursive;
+    opacity: 0.8;
+    letter-spacing: 6px;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+}
+
+
+p{
+    color:azure;
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+    padding: 20px;
+    margin: 50px;
+    opacity: 0.7;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.nav{
+    border:10px solid whitesmoke;
+    border-width:2px 0px;
+    list-style:none;
+    margin:20px;
+    padding:1px;
+    text-align:center;
+    text-decoration: none;
+    opacity:0.7;
+    
+}
+.nav li{
+    display:inline;
+    margin: 20px;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+    margin: :0px;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    background-color: whitesmoke;
+    color: dimgray;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.gallery{
+     margin: 10px 50px;
+     z-index: 1;
+}
+.gallery img{
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.gallery img:hover{
+    filter: grayscale(0);
+    transform:scale(1,1);
+}
+
+.first{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    border: 10px double #ddd;
+    opacity: 0.7;
+}
+
+.second {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+
+
+.third {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+.fourth{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+
+

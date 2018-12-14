@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+
+body{
+    background-color: #d86c00;
+}
+
+nav ul, nav li {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    z-index: 1;
+}
+
+ul.dropdown {
+	position: relative;
+	top:0;
+	left:0;
+  width:100%;
+  height:40px;
+  background:#000;
+}
+
+.dropdown {
+	display: inline-block;
+	padding: 0;
+	height: 40px;
+	width: 100%;
+	position: absolute;
+}
+
+.showIcon {
+	display: block;
+	padding: 0 0 0 40px;
+	height: 40px;
+	width: 140px;
+  color:#FFF;
+  line-height:40px;
+  /* comment out text-indent to show text link */
+	text-indent: -999em;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAMAAADeWG8gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjE2QjAxNjRDOUNEOTExRTE4RTNFRkI1RDQ2MUYxOTQ3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjE2QjAxNjREOUNEOTExRTE4RTNFRkI1RDQ2MUYxOTQ3Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTZCMDE2NEE5Q0Q5MTFFMThFM0VGQjVENDYxRjE5NDciIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTZCMDE2NEI5Q0Q5MTFFMThFM0VGQjVENDYxRjE5NDciLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz42AEtnAAAABlBMVEX///////9VfPVsAAAAAnRSTlP/AOW3MEoAAAAWSURBVHjaYmAgFzBiACKFho6NAAEGAD07AG1pn932AAAAAElFTkSuQmCC) no-repeat 10px center;
+}
+
+ul.showMenu {
+	position: absolute; 
+  /* arbitrary figure as long as off screen */
+	left: -1200px;
+	top: 0;
+	width: 100%;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.showMenu li {
+	background: rgba(0,0,0,0.0);
+  display: block;
+	height: 0;
+	-webkit-transition: all 0.95s ease-out;
+	-moz-transition: all 0.95s ease-out;
+	-o-transition: all 0.95s ease-out;
+	transition: all 0.95s ease-out;
+}
+
+ul.showMenu:target {
+  /* used to pull in menu when selected */
+	left: 0; 
+}
+
+.showMenu:target li:first-child {
+  /* +1px on height of menu */
+	margin-top: 41px; 
+}
+
+.showMenu:target li {
+	background: rgba(0,0,0,0.8);
+	float: left;
+	height: auto;
+	width: 100%;
+  /* this is just for decoration */
+	margin-bottom: 1px;
+}
+
+.showMenu:target li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+}
+
+.showMenu:target li a:hover {
+	padding: 10px 15px 10px 25px;
+	text-decoration: none;
+  background:rgba(0,0,0,1.0);
+}
+
+a.close {
+	font-size: 95%;
+	font-style: italic;
+}
+
+
+
+/*images below*/
+
+img {
+  top: 200px;
+  left: 250px;
+}
+
+.selfie {
+    position: fixed;
+    top: 290px;
+    left: 460px;
+    z-index: 3;
+}
+
+.dark {
+    position: fixed;
+    border-style: dotted;
+    border-color: #c57b1e;
+    z-index: 2;
+}
+
+
+.item {
+  width: 550px;
+  height: 300px;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+.description{
+  width: 540px;
+  padding: 5px;
+  border: 5px solid black;
+  margin-top: 100px;
+  margin-left: 200px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.firstpage p {
+    width: 600px;
+    font-size: 18px;
+    margin-left: 700px;
+    margin-top: -20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+h4{
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.info{
+    margin-left: 800px;
+    margin-top: 0px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}

@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+a {
+    text-decoration: none;
+}
+
+.a{
+color:aliceblue;
+font-family:'VT323', monospace;
+font-size: 26px;
+position :relative;
+-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+animation: first 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes first {
+    from {top: 0px;}
+    50% {top: 100px !important}
+    to {top: 200px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    50% {top: 100px !important} /* ignored */
+    to {top: 200px;}
+}
+
+.b{
+color:antiquewhite;
+font-family:'VT323', monospace;
+font-size: 22px;
+position :relative;
+-webkit-animation: second 5s infinite; /* Safari 4.0 - 8.0 */
+animation: second 5s infinite;   
+}
+
+@keyframes second {
+    0%   {left:0px; top:0px;}
+    25%  {left:1280px; top:0px;}
+    50%  {left:1280px; top:600px;}
+    75%  {left:0px; top:800px;}
+    100% {left:0px; top:0px;}
+}
+
+.c {
+ color: cornsilk;
+ font-family:'VT323', monospace;
+ font-size: 28px;
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-slow 25s linear infinite;
+ -webkit-animation: scroll-slow 25s linear infinite;
+ animation: scroll-slow 25s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-slow {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-slow {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+
+.d {
+ color:azure;
+ font-family:'VT323', monospace;
+ font-size: 18px;
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ width: 50%;
+ height: 50%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(-100%);
+ -webkit-transform:translateX(-100%);	
+ transform:translateX(-100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-right 15s linear infinite;
+ -webkit-animation: scroll-right 15s linear infinite;
+ animation: scroll-right 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-right {
+ 0%   { -moz-transform: translateX(-100%); }
+ 100% { -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes scroll-right {
+ 0%   { -webkit-transform: translateX(-100%); }
+ 100% { -webkit-transform: translateX(100%); }
+}
+
+
+.e{
+font-family:'VT323', monospace;
+font-size: 28px;
+border-top: 70px;
+padding-left: 800px;
+color:aliceblue;
+position :relative;
+-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+animation: first 3s infinite;
+}
+
+@-webkit-keyframes first {
+    from {top: 0px;}
+    50% {top: 100px !important}
+    to {top: 500px;}
+}
+
+.f {
+ font-family:'VT323', monospace;
+ font-size: 28px;
+ color:azure;
+ height: 20px;	
+ overflow: hidden;
+ position: relative;
+ width: 50%;
+ height: 20%;
+ margin: 80px;
+ line-height: 20px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(-100%);
+ -webkit-transform:translateX(-100%);	
+ transform:translateX(-100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-right 15s linear infinite;
+ -webkit-animation: scroll-right 15s linear infinite;
+ animation: scroll-right 10s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-right {
+ 0%   { -moz-transform: translateX(-100%); }
+ 100% { -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes scroll-right {
+ 0%   { -webkit-transform: translateX(-100%); }
+ 100% { -webkit-transform: translateX(100%); }
+}
+
+.g{
+font-family:'VT323', monospace;
+font-size: 30px;
+color:antiquewhite;
+position :relative;
+-webkit-animation: second 7s infinite; /* Safari 4.0 - 8.0 */
+animation: third 7s infinite;   
+}
+
+@keyframes third {
+    0%   {left:0px; top:0px;}
+    25%  {left:1200px; top:300px;}
+    50%  {left:1200px; top:1000px;}
+    75%  {left:75px; top:700px;}
+    100% {left:0px; top:0px;}
+}
+
+.h{
+color:aliceblue;
+font-family:'VT323', monospace;
+font-size: 26px;
+position :relative;
+-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+animation: first 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes first {
+    from {top: 0px;}
+    50% {top: 100px !important}
+    to {top: 200px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    50% {top: 100px !important} /* ignored */
+    to {top: 200px;}
+}
+
+.i{
+font-family:'VT323', monospace;
+font-size: 28px;
+color:antiquewhite;
+position :relative;
+-webkit-animation: second 7s infinite; /* Safari 4.0 - 8.0 */
+animation: third 15s infinite;   
+}
+
+@keyframes third {
+    0%   {left:1200px; top:800px;}
+    25%  {left:1200px; top:300px;}
+    50%  {left:400px; top:1000px;}
+    75%  {left:75px; top:700px;}
+    100% {left:0px; top:0px;}
+}
+
+.j {
+ font-family:'VT323', monospace;
+ font-size: 24px;
+ color: cornsilk;
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-slow 25s linear infinite;
+ -webkit-animation: scroll-slow 25s linear infinite;
+ animation: scroll-slow 25s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-slow {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-slow {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+
+.k {
+ font-family:'VT323', monospace;
+ font-size: 28px; 
+ color:azure;
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ width: 50%;
+ height: 50%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(-100%);
+ -webkit-transform:translateX(-100%);	
+ transform:translateX(-100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-right 15s linear infinite;
+ -webkit-animation: scroll-right 15s linear infinite;
+ animation: scroll-right 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-right {
+ 0%   { -moz-transform: translateX(-100%); }
+ 100% { -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes scroll-right {
+ 0%   { -webkit-transform: translateX(-100%); }
+ 100% { -webkit-transform: translateX(100%); }
+}
+
+.l{
+ font-family:'VT323', monospace;
+ font-size: 50px;
+ color: cornsilk;
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-slow 10s linear infinite;
+ -webkit-animation: scroll-slow 10s linear infinite;
+ animation: scroll-slow 10s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-slow {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-slow {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+
+
+.m {
+ font-family:'VT323', monospace;
+ font-size: 60px;
+ text-decoration: line-through;
+ color: cornsilk;
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-slow 15s linear infinite;
+ -webkit-animation: scroll-slow 15s linear infinite;
+ animation: scroll-slow 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-slow {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-slow {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+
+.n{
+font-family:'VT323', monospace;
+font-size: 24px;
+border-top: 70px;
+padding-left: 300px;
+color:aliceblue;
+position :relative;
+-webkit-animation: mymove 6s infinite; /* Safari 4.0 - 8.0 */
+animation: first 6s infinite;
+}
+
+@-webkit-keyframes first {
+    from {top: 0px;}
+    50% {top: 350px !important}
+    to {top: 500px;}
+}
+
+
+.o {
+ color:azure;
+ font-family:'VT323', monospace;
+ font-size: 24px;
+ position: absolute;
+ width: 80%;
+ height: 10%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 15s linear infinite;
+ -webkit-animation: scroll-left 15s linear infinite;
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%); 
+ }
+}
+
+.p{
+color:aliceblue;
+font-family:'VT323', monospace;
+font-size: 20px;
+position :relative;
+-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+animation: first 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes first {
+    from {top: 0px;}
+    50% {top: 100px !important}
+    to {top: 200px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    50% {top: 100px !important} /* ignored */
+    to {top: 200px;}
+}
+
+.q{
+color:aliceblue;
+font-family:'VT323', monospace;
+font-size: 26px;
+position :relative;
+-webkit-animation: mymove 8s infinite; /* Safari 4.0 - 8.0 */
+animation: first 8s infinite;
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    50% {top: 100px !important} /* ignored */
+    to {top: 200px;}
+}
+
+.r{
+color:aliceblue;
+font-family:'VT323', monospace;
+font-size: 22px;
+position :relative;
+-webkit-animation: mymove 8s infinite; /* Safari 4.0 - 8.0 */
+animation: first 8s infinite;
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {top: 0px;}
+    50% {top: 100px !important} /* ignored */
+    to {top: 200px;}
+}
+
+.s {
+ font-family:'VT323', monospace;
+ font-size: 28px; 
+ color:azure;
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ width: 50%;
+ height: 50%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(-100%);
+ -webkit-transform:translateX(-100%);	
+ transform:translateX(-100%);
+ /* Apply animation to this element */	
+ -moz-animation: scroll-right 10s linear infinite;
+ -webkit-animation: scroll-right 15s linear infinite;
+ animation: scroll-right 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-right {
+ 0%   { -moz-transform: translateX(-100%); }
+ 100% { -moz-transform: translateX(100%); }
+}
+@-webkit-keyframes scroll-right {
+ 0%   { -webkit-transform: translateX(-100%); }
+ 100% { -webkit-transform: translateX(100%); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.glitch{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+    opacity:0.9;
+    
+}
+
+.first{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 0.6;
+}
+
+.second {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
